@@ -478,14 +478,14 @@ public class ObjectHelper {
     }
 
     private static String getArrayParentPath(String arrayPath) {
-        int obIndex = arrayPath.indexOf(OB);
+        int obIndex = arrayPath.indexOf(OPEN_BRACKET);
         return arrayPath.substring(0, obIndex);
     }
 
     private static int getIndexFromArrayPath(String arrayPath) {
         if (isArrayPath(arrayPath)) {
-            int obIndex = arrayPath.indexOf(OB);
-            int cbIndex = arrayPath.indexOf(CB);
+            int obIndex = arrayPath.indexOf(OPEN_BRACKET);
+            int cbIndex = arrayPath.indexOf(CLOSE_BRACKET);
             String arrayIndex = arrayPath.substring(obIndex + 1, cbIndex);
             if (ARRAY_INDEX_PATTERN.matcher(arrayIndex).matches()) {
                 return Integer.parseInt(arrayIndex, 10);

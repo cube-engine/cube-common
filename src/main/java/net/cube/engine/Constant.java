@@ -8,8 +8,12 @@ public interface Constant {
 
     String DOT = "\\.";
 
-    String OB = "[";
+    String OPEN_BRACE = "{";
 
-    String CB = "]";
+    String CLOSE_BRACE = "}";
+
+    String OPEN_BRACKET = "[";
+
+    String CLOSE_BRACKET = "]";
 
 }
