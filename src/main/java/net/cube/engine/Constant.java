@@ -16,4 +16,8 @@ public interface Constant {
 
     String CLOSE_BRACKET = "]";
 
+    String FILE_PATH = Constant.class.getPackage().getName().replace(".", "/");
+
+    String MANIFEST_ENTRY_NAME = "Engine-Module";
+
 }
